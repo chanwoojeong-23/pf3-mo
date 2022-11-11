@@ -1,0 +1,274 @@
+@media screen and (max-width:768px){ 
+  /* 장치가 스크린이고 화면너비가 최대768px일때(768px이하) 스타일적용 */
+  header{
+  width: calc(100% - 20px);
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  }
+  header ul{
+  display: none;
+  }
+  header > a{
+  display: none;
+  }
+  header > a:nth-of-type(1){
+  display: none;  
+  }
+  header > a:nth-of-type(2){
+  display: block;
+  }
+/* 타이틀   */
+  div#title{
+  background-position-y: bottom;
+  background-size: contain;
+  background-position-x: center;
+  background-position-y: 250px;
+  }
+  div#title .in{
+  width: calc(100% - 20px);
+  margin-left: 10px;
+  height: auto;
+  padding: 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 100px;
+  align-items: center;
+  }
+  div#title h2{
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
+  padding-right: 10px;
+  }
+  div#title h2 + p{
+  font-size: 23px;
+  line-height: 2.5;
+  font-weight: bold;
+  }
+  div#title h2 + p + p{
+  margin-bottom: 20px;
+  font-size: 14px;
+  }
+  div#title a{
+  position: absolute;
+  position: relative;
+  top: 245px;
+  left: -8px;
+  font-size: 17px;
+  }
+  div#title .in::after{
+  position: static; /* position초기화명령(position안준상태로 되돌림) */
+  width: 86%;
+  height: 225px;
+  }
+  
+/* 회사소개  */
+  section{
+  width: calc(100% - 20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+  section#about .company{
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding-bottom: 320px;
+  padding-top: 200px;
+  font-size: 14px;
+  font-weight: 500;
+  }
+  section#about .company img{
+  position: absolute;
+  position: relative;
+  top: 65px;
+  height: 100%;
+  width: 100%;
+  }
+  section#about .company div{
+  width: auto;
+  align-items: center;
+  }
+  section#about .company h2 + p + p{
+  margin-bottom: 20px;
+  }
+  section#about .company .go{
+  position: absolute;
+  bottom: 10px;
+  }
+  section#about .company span.control{
+  position: absolute;
+  left: 25px;
+  bottom: 150px;
+  }
+  section#about .company h2 + p span{
+  font-size: 23px;
+  }
+  section#about .company h2 + p{
+    
+  font-size: 18px;
+  }
+/*  서비스  */
+  #service .wrap h2 + .p{
+  font-size: 24px;
+  }
+  #service .wrap ul{
+  flex-direction: column;
+  justify-content: center;
+  }
+  #service .wrap ul li{ 
+  width: 100%;
+  }
+  /* 히스토리 */
+  section#history{
+  position: absolute;
+  position: relative;
+  bottom: 20px;
+  }
+  #history .wrap{
+  width: 80%;
+  text-align: center;
+  position: absolute;
+  position: relative;
+  bottom: 80px;
+  background-size: 100%;
+  background-position-y: 171px;
+  background-position-x: 30px;
+  }
+  #history .wrap hgroup h2{
+  text-align: center;
+  position: absolute;
+  position: relative;
+  left: 20px;
+  }
+  #history .wrap hgroup h3{
+    
+  font-size: 14px;
+  }
+  #history .wrap hgroup h3 span{
+  font-size: 20px;
+  width: 365px;
+  position: absolute;
+  /*! position: relative; */
+  right: -74px;
+  height: 450px;
+  }
+  #history .wrap ul.list{
+  text-align: left;
+  font-size: 13px;
+  padding-top: 300px;
+  }
+  #history .wrap ul.list::after{
+    
+  position: absolute;
+  }
+  #history .wrap ul.list::before{
+    
+  }
+  /*찾아오는길*/
+  section#location .wrap{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+  }
+  section#location .wrap iframe{
+  width: 90%;
+  position: absolute;
+  position: relative;
+  top: 150px;
+  }
+  section#location .wrap .right{
+  width: 68%;
+  text-align: center;
+  position: absolute;
+  position: relative;
+  bottom: 480px;
+  left: 0;
+  }
+  section#location .wrap .right hgroup h2.subject{
+  margin-left: -25px;
+  }
+  section#location .wrap .right hgroup h3{
+  font-size: 30px;
+  line-height: 1.6;
+  text-align: center;
+  }
+  section#location .wrap .right p{
+  line-height: 3;
+  font-size: 13px;
+  }
+  section#location .wrap .right p+p{
+  line-height: 1.1;
+  }
+  section#location .wrap .right a{
+  position: absolute;
+  position: relative;
+  top: 400px;
+  left: 0px;
+  font-size: 11px;
+  }
+  footer{
+  width: calc(100% - 20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+  footer .wrap{
+  width: 100%;
+  /*! margin-right: 0px; */
+  font-size: 15px;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  position: relative;
+  bottom: 130px;
+  }
+  footer .wrap h1{
+  font-size: 11px;
+  text-align: center;
+  }
+  footer .wrap p.copyright{
+  position: static;
+  font-size: 9px;
+  line-height: 10;
+  margin-bottom: 20px;
+  }
+  aside{
+    
+  }
+  footer .wrap address{
+  height: 70px;
+  width: 340px;
+  padding-right: 38px;
+  box-sizing: border-box;
+  line-height: 2;
+  }
+  .block{
+  display: block
+  }
+  footer .wrap p.tel{
+  width: 230px;
+  font-size: 25px;
+  position: absolute;
+  position: relative;
+  left: 25px;
+  top: 0;
+  }
+  footer .wrap p.tel strong{
+  position: absolute;
+  position: relative;
+  top: 0;
+  font-size: 50px;
+  }
+}
