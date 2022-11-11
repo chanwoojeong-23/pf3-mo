@@ -33,6 +33,7 @@ footer .wrap address{
   width: 68%;
   color: #fff;
   padding-left: 50px;
+  display: flex;
 }
 footer .wrap address strong{
   font-weight: bold;
@@ -47,11 +48,11 @@ footer .wrap p{
 }
 footer .wrap p.copyright{
   position: absolute;
-  left: 111px;
+  left: 112px;
   top: 72px;
   color: #fff;
   padding-left: 38px;
-  line-height: 5;
+  line-height: 6;
 }
 footer .wrap p.tel{
   margin-right: 22px;
