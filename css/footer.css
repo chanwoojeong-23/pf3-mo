@@ -1,6 +1,7 @@
 /* 하단 */
 footer{
   font-family: 'Hahmlet', serif;
+  background-color: #1a1a1a;
 }
 footer .wrap{
   padding-top: 50px;
@@ -50,9 +51,10 @@ footer .wrap p.copyright{
   position: absolute;
   left: 112px;
   top: 72px;
-  color: #fff;
+  color: #898989;
   padding-left: 38px;
-  line-height: 6;
+  line-height: 3;
+  font-size: 13px;
 }
 footer .wrap p.tel{
   margin-right: 22px;

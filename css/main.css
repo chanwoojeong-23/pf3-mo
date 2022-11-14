@@ -2,7 +2,7 @@ main{
   position: relative;
 }
 section{
-  width: 1440px;
+  /*! width: 1440px; */
   margin: 0 auto;
   /*! border: 3px solid #999; */
   box-sizing: border-box;
@@ -26,6 +26,7 @@ section{
   line-height: 70px;
   color: #fff;
   background-color: #000700;
+  color: #ffa519;
 }
 .subject2{
   font-size: 40px;
@@ -56,33 +57,37 @@ section#about .company .subject{
  
 }
 section#about .company h2+p{
-  line-height: 1.5;
+  line-height: 1;
   margin-bottom: 30px;
   margin-top: 30px;
   font-size: 25px;
+  color: #ffa519;
 }
 section#about .company h2 + p span{
   
   font-size: 45px;
-  line-height: 2.5;
+  line-height: 1.5;
+  color: #eee;
 }
 section#about .company h2+p+p{
   line-height: 1.2;
   margin-bottom: 70px;
+  color: #eee;
 }
 section#about .company .go{
-  background-color: #000;
-  color: #fff;
-  font-size: 15px;
-  padding: 20px 50px;
-  border: 3px solid;
-  width: 135px;
+  padding: 15px 15px;
+  margin-top: 30px;
+  display: inline-block;
+  width: 250px;
+  text-align: center;
   transition: all 0.5s;
   border-radius: 50px;
+  background-color: #ff6b22;
+  font-size: 18px;
 }
 section#about .company a:hover{
-  background-color: #535353;
-  color: #fff;
+  background-color: #ffd222;
+  color: #111010;
 }
 section#about .company a::after{
   content: "";
@@ -103,8 +108,8 @@ section#about .company a::after{
   box-sizing: border-box;
   position: absolute;
   position: relative;
-  bottom: 15px;
-  left: 5px;
+  bottom: 17px;
+  left: 20px;
 }
 section#about .company span.control{
   margin-top: 45px;
@@ -112,7 +117,7 @@ section#about .company span.control{
 }
 section#about .company span.control button{
   border: none;
-  background-color: transparent;
+  background-color: rgba(255,255,255,0.87);
   font-size: 0;
   width: 50px;
   height: 50px;
@@ -122,16 +127,16 @@ section#about .company span.control button{
   border: 1px solid;
   border-radius: 50%;
   background-position: center;
-  color: #ffff15;
+  color: #fff;
 }
 section#about .company span.control button.prev{
-  background-image: url(../img/r-arrow.svg);
+  background-image: url(../img/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.svg);
   transform: rotate(180deg);
   background-position-x: center;
   margin-right: 30px;
 }
 section#about .company span.control button.next{
-  background-image: url(../img/r-arrow.svg);
+  background-image: url(../img/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.svg);
   background-position-x: center;
 }
 section#about .company img{
@@ -215,7 +220,7 @@ section#about .company img:first-child + img{ /* img태그는 인라인태그 �
   content: "";
   width: 200px;
   display: block;
-  border-bottom: 3px solid #ccc;
+  border-bottom: 3px solid #514f4f;
   margin: 0 auto;
   margin-top: 8px;
 }
@@ -272,6 +277,7 @@ section#about .company img:first-child + img{ /* img태그는 인라인태그 �
 /* ---------------------------------히스토리----------------------------------- */
 #history{
 
+  background-color: #101010;
 }
 #history .wrap{
   
@@ -280,29 +286,33 @@ section#about .company img:first-child + img{ /* img태그는 인라인태그 �
   /*! margin-left: 200px; */
   background-image: url(../img/888f7f99a441cbbf6058342b892abf96.gif);
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 35%;
   background-origin: content-box;
   background-position: right center;
+  padding-top: 30px;
 }
 #history .wrap hgroup{
   
 }
 #history .wrap hgroup h2{
-  
+  background-color: #0F0F0F;
 }
 #history .wrap hgroup h3{
   line-height: 1.6;
   margin-top: 20px;
   margin-bottom: 30px;
   font-size: 25px;
+  color: #999;
 }
 #history .wrap hgroup h3 span{
   display: block;
+  color: #fff;
 }
 #history .wrap ul.list{
   line-height: 2.5;
   padding-left: 52px;
   position: relative;
+  margin-top: 65px;
 }
 #history .wrap ul.list::before{
   content: "";
@@ -374,7 +384,7 @@ section#location{
 
 }
 section#location .wrap{
-  width: 1200px;
+  width: 1000px;
   margin: 0 auto;
   display: flex;
   column-gap: 70px;
@@ -411,9 +421,9 @@ section#location .wrap .right a{
   /*! width: 276px; */
   /*! line-height: 4; */
   /*! text-align: center; */
-  border: 3px solid;
   transition: all 0.5s;
   border-radius: 50px;
+  background-color: #ff6b22;
 }
 section#location .wrap .right a::after{
   content: "";
@@ -433,8 +443,8 @@ section#location .wrap .right a::after{
   transform: rotate(45deg);
 }
 section#location .wrap .right a:hover{
-  background-color: #535353;
-  color: #fff;
+  background-color: #ffd222;
+  color: #111010;
 }
 
 

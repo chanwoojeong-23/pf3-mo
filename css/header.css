@@ -17,10 +17,13 @@ header{
     justify-content: space-evenly;
     margin: 0 auto 0 auto;
     align-items: center;
-    background-color: #18191a;
+    background-color: rgba(0,0,0,0.5);
     box-sizing: border-box;
     position: relative;
-    opacity: 0.9;
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
 }
 div>*{ /* css주석 >바로아래 * 모든 요소 */
     color: #fff;
@@ -57,20 +60,20 @@ header ul li{
 }
 header ul li a{
     padding: 10px 30px;
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 500;
     font-family: 'Noto Sans KR', sans-serif;
-    color: #999999;
+    color: #fff;
 }
 header ul li a:hover{ /*:hover은 해당요소에 마우스를 올린상태를 의미 */
     color:#fff;
-    border-bottom:2px solid #ccc;
+    /*! border-bottom:2px solid #f3e9e9; */
 }
 a{
  text-decoration: none; /*밑줄없애기*/
 }
 header>a:nth-of-type(1){ /* > 자식선택자 바로아래에 있는 요소를 선택(header태그바로아래에 있는 a) */
-    background-color: #333333;
+    background-color: rgba(126,70,70,0.6);
     color: #fff;
     width: 250px;
     height: 100px;
@@ -99,7 +102,7 @@ header>a:nth-of-type(2)::after{
     margin-top: 11px;
     }
 header a:hover{
-    background-color: #676767;
+    /*! background-color: #f65858; */
     color: #fff;
 }
 

@@ -1,26 +1,31 @@
 div#title{
-  background-image:url(../img/beer_v2.gif);
+  background-image:url(../img/beer_v2.gif),url(https://images.unsplash.com/photo-1567696911980-2eed69a46042?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
   background-repeat: no-repeat;
-  background-size:35%;
-  background-position-x:910px;
-  background-position-y: 5px;
+  background-size:0%, 100%;
+  background-position-x:left;
+  background-position-y: center;
+  height: 70%;
 }
 div#title .in{
-  height: 600px; 
+  height: 824px; 
   width: 1440px;
   margin: 0 auto;
   /*! border: 3px solid #999; */
   border-top: transparent;
-  padding-top: 100px;
+  /*! padding-top: 100px; */
   padding-left: 100px;
   box-sizing: border-box; /* padding을 주면 크기가 커지는데 크기가 커지지 않게 처리 */
   position: relative;
   font-family: 'Hahmlet', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 div#title h2{
   font-size: 25px;
-  color: #fff;
+  color: #ffa519;
 }
 div#title h2 + p{ /* + 인접선택자,형제선택자 h2다음에 오는 p */
   font-size: 45px;
@@ -34,7 +39,7 @@ div#title h2 + p + p{
   color: #fff;
 }
 div#title a{ /* 인라인태그에는 padding(크기에 영향)이 정확히 적용되지 않는다.display:block로 전환 */
-  border: 3px solid;
+  /*! border: 3px solid; */
   padding: 20px 30px;
   margin-top: 30px;
   display: inline-block;
@@ -42,6 +47,7 @@ div#title a{ /* 인라인태그에는 padding(크기에 영향)이 정확히 적
   text-align: center;
   transition: all 0.5s;
   border-radius: 50px;
+  background-color: #ff6b22;
 }
 div#title a::after{
   content: "";
@@ -55,8 +61,8 @@ div#title a::after{
   transform: rotate(45deg);
 }
 div#title a:hover{
-  background-color: #535353;
-  color: #fff;
+  background-color: #ffd222;
+  color: #111010;
 }
 div#title .in::after{
   content: "";
